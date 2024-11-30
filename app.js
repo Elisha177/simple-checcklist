@@ -1,6 +1,9 @@
 const express = require('express');
 const checklistRoutes = require('./routes/checklistRoutes');
 const path = require('path');
+const cors = require('cors');
+app.use(cors({ origin: 'https://simple-checcklist-d19y8osa6-elisha177s-projects.vercel.app/' }));
+
 
 const app = express();
 
